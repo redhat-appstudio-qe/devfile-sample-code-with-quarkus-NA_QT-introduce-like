@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/user1-tenant/devfile-sample-code-with-quarkus/devfile-sample-code-with-quarkus@sha256:0a0c9053b25d7f6d85cb016c06e4c10f7c0c0b7f61de8b0df1749634ff98b47c
+        name: my-java-quarkus
+        resources: {}
+status: {}
